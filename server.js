@@ -4,8 +4,8 @@ import express from 'express'
 
 const args = minimist(process.argv.slice(2))
 var port;
-if (argv.port) {
-	port = argv.port;
+if (args.port) {
+	port = args.port;
 } else {
 	port = 5000;
 }
